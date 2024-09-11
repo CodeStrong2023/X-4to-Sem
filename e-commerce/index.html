@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerce - Productos</title>
+    <title>Tienda Online - eCommerce</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body>
     <header>
-        <h1>Tienda Online</h1>
+        <h1 class="logo">Mi Tienda</h1>
         <nav>
-            <a href="cart.html">Ver Carrito</a>
+            <a href="#products">Productos</a>
+            <a href="#cart">Carrito</a>
         </nav>
     </header>
     <main>
-        <section id="products">
-            <!-- Lista de productos -->
+        <section id="products" class="product-section">
+            <h2>Productos Disponibles</h2>
+            <div class="product-list">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+        <section id="cart" class="cart-section">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Items del carrito -->
+            </div>
+            <button id="checkout" class="checkout-button">Pagar con MercadoPago</button>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
