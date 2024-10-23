@@ -1,0 +1,173 @@
+/* General Styles */
+
+
+body {
+    font-family: 'century gothic', sans-serif;
+    background-color: #09090f;
+    color: #070606;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(img/av1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #080807; /* Color para resaltar el título */
+}
+
+h2, h4 {
+    color: #0d0c0a;
+    font-family: 'century gothic', sans-serif;
+}
+
+
+button {
+    background-color: #291d02;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'century gothic', sans-serif;
+}
+
+button:hover {
+    background-color: #060604;
+}
+
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: rgba(188, 188, 194, 40%);
+    box-shadow: 0 4px 8px rgba(7, 5, 5, 0.5);
+}
+
+
+/* Specific Section Styles */
+#reglas-del-juego, #seleccionar-personaje, #seleccionar-ataque, #mensajes, #reiniciar {
+    display: none; /* Ocultos inicialmente */
+}
+
+#reglas-del-juego {
+    text-align: left;
+}
+
+#reglas-del-juego ol, #reglas-del-juego ul {
+    margin-left: 20px;
+}
+
+#reglas-del-juego li {
+    margin: 10px 0;
+}
+
+label {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+#mensajes h2 {
+    font-size: 1.5rem;
+    color: #0e0c0c; /* Color para mensajes */
+}
+
+#seleccionar-personaje{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#seleccionar-personaje label{
+    display: inline-block;
+    margin: 10px;
+}
+
+#seleccionar-personaje img{
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+#seleccionar-personaje img:hover, #seleccionar-personaje img:focus{
+    transform: scale(1.2);
+}
+#seleccionar-personaje img.clicked {
+    transform: scale(1.2);
+}
+
+              
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 10px;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
